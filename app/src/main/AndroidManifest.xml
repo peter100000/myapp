@@ -17,7 +17,13 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+        <activity android:name=".manage"/>
+        <activity android:name=".sangsae"/>
+        <activity android:name=".sinchung"/>
+
     </application>
 
+    <uses-permission android:name="android.permission.INTERNET"/>
 </manifest>

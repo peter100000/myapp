@@ -23,28 +23,32 @@
         android:id="@+id/textView" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:text="Username"
-        android:id="@+id/editText2"
+        android:hint="Username"
+        android:maxLength="50"
+        android:id="@+id/id"
         android:layout_below="@+id/textView"
         android:layout_alignStart="@+id/textView"
         android:layout_marginTop="92dp"
         android:layout_alignEnd="@+id/textView" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:text="****"
-        android:id="@+id/editText"
-        android:layout_below="@+id/editText2"
-        android:layout_alignEnd="@+id/editText2"
-        android:layout_alignStart="@+id/editText2" />
+        android:maxLength="300"
+        android:hint="****"
+        android:inputType="textPassword"
+        android:id="@+id/pwd"
+        android:layout_below="@+id/id"
+        android:layout_alignEnd="@+id/id"
+        android:layout_toEndOf="@+id/imageView1" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="로그인"
+        android:onClick="btn"
         android:id="@+id/button"
         android:background="#194aac"
         android:layout_alignParentBottom="true"
@@ -58,16 +62,16 @@
         android:layout_height="80px"
         android:id="@+id/imageView"
         android:src="@drawable/gg"
-        android:layout_alignTop="@+id/editText2"
-        android:layout_toStartOf="@+id/editText2" />
+        android:layout_alignTop="@+id/id"
+        android:layout_toStartOf="@+id/id" />
 
     <ImageView
         android:layout_width="100px"
         android:layout_height="80px"
         android:id="@+id/imageView1"
         android:src="@drawable/gg"
-        android:layout_below="@+id/imageView"
-        android:layout_toStartOf="@+id/editText2" />
+        android:layout_alignBottom="@+id/pwd"
+        android:layout_toStartOf="@+id/id" />
 
 
 </RelativeLayout>
